@@ -1,14 +1,13 @@
 const videoElem = document.getElementById("video");
 const startElem = document.getElementById("start");
-const stopElem = document.getElementById("stop");
-const socket = io('/');  
+const stopElem = document.getElementById("stop"); 
 const videoGrid = document.getElementById('video-grid') 
 const myVideo = document.createElement('video'); 
 const caption = document.createElement('H2'); 
 const unique = document.getElementById('unique')
 const btn = document.getElementById("myBtn");
 const span = document.getElementsByClassName("close")[0];
-myVideo.muted = true; 
+const socket = io('/'); 
 let peers = {}; 
 let sharePeers = {}
 let isStreamRecording = false; 
@@ -23,6 +22,7 @@ let num = 0
 let inter = 0
 let inter_count = 0
 let inter2 = 0
+myVideo.muted = true; 
 
 
 var peer = new Peer(undefined, {
