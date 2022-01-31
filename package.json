@@ -1,0 +1,24 @@
+{
+  "name": "zoom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.12.2",
+    "detectrtc": "^1.4.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "jquery-ui-dist": "^1.12.1",
+    "jspdf": "^2.3.1",
+    "peer": "^0.6.1",
+    "socket.io": "^4.0.2",
+    "sweetalert2": "^11.0.12",
+    "uuid": "^8.3.2"
+  }
+}

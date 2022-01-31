@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Teacher Assistant</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+  <!-- Main Stylesheet File -->
+  <link href="home.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="#" class="scrollto" style="margin-left: 50px; font-size: 30px;"><span>SYNC Video Conferencing</span></a></h1>
+      </div>
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul style="padding-bottom: 50px; left: 300px; top: 0px">
+          <li><a href="#intro" style="font-size: 15px;">About</a></li>
+          <li><a href="#features" style="font-size: 15px;">Our features</a></li>
+          <li><a href="#create" style="font-size: 15px;">Create a meeting</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-md-6 intro-info order-md-first order-last">
+          <h2 style="margin-top: 100px;">
+            Free browser-based video conferencing application<br>
+             <br><span>Easy.Customizable.Quick.</span></h2>
+             <br><button id="create-button" style="margin-left: 150px; font-weight: bold; color: black; font-size: 15px;" onclick="window.location.href='#create'"> CREATE MEETING</button>
+        </div>
+        <div class="col-md-6 intro-img order-md-last order-first">
+          <img src="newsync2.png" img style="margin-left:100px; margin-top: 100px;" width="200" height="200" alt="" class="img-fluid" >
+        </div>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      <div id="features">
+        <h2 style="text-align: center; font-weight: bold; font-size: 35px;"><span>Our Features</span></h2>
+        <div class="float-container">
+          <div class="float-child" style="text-align: center;">
+            <img src="enhanced-chat.jpg" alt="Avatar" class="image" style="width: 250px; height: 200px;">
+            <div class="overlay">
+              <div class="text">Enhanced chat</div>
+            </div>
+          </div>
+          <div class="float-child" style="text-align: center;"> 
+            <img src="color-palette.PNG"  alt="Avatar" class="image" style="width: 250px; height: 200px; ">
+            <div class="overlay">
+              <div class="text">Customizable background</div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="left-div">
+            <h4 style="text-align:center; color: black;">In this feature, the chat function has been optimised for the function of this meeting. There is a message whenever someone joins/leaves the meeting.</p>
+          </div>
+          <div class="right-div">
+            <h4 style="text-align:center; color: black;">The background of the meeting can be changed, so that is allows a sense of customizability to the user and adds a visual appeal. </p>
+          </div>
+        </div>
+        <div class="float-container">
+          <div class="float-child" style="text-align: center;">
+            <img src="confused-indicator.jpg" alt="Avatar" class="image" style="width: 250px; height: 200px;">
+            <div class="overlay">
+              <div class="text">Clarity indicator</div>
+            </div>
+          </div>
+          <div class="float-child" style="text-align: center;"> 
+            <img src="screen-share.PNG" alt="Avatar" class="image" style="width: 250px; height: 200px;">
+            <div class="overlay">
+              <div class="text">Screen sharing</div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="left-div">
+            <h4 style="text-align:center; color: black;">Participants can indicate whenever they are confused (either about something specific, or in general) at any time. </p>
+          </div>
+          <div class="right-div">
+            <h4 style="text-align:center; color: black;"> This feature allows participants to share their screen in the meeting. </p>
+          </div>
+        </div>
+        <div class="float-container">
+          <div class="float-child" style="text-align: center;">
+            <img src="notes-taking.jpg" alt="Avatar" class="image" style="width: 250px; height: 200px;">
+            <div class="overlay">
+              <div class="text">Active notes taking</div>
+            </div>
+          </div>
+          <div class="float-child" style="text-align: center;"> 
+            <img src="exam-mode.jpg" alt="Avatar" class="image" style="width: 250px; height: 200px; ">
+            <div class="overlay">
+              <div class="text">Exam mode</div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="left-div">
+            <h4 style="text-align:center; color: black;">Participants can take notes side-by-side in the meeting itself as it is going on; the notes can be saved as a word document/PDF at the end. </p>
+          </div>
+          <div class="right-div">
+            <h4 style="text-align:center; color: black;">The exam mode allows for the participant's video feed to be recorded separately and then saved locally on their device.  </p>
+          </div>
+        </div>
+        <br><br>
+      </div>
+
+      <div id="create">
+        <h3 style="text-align: center; font-weight: bold; font-size: 35px;"> Create/Join a meeting</h3>
+        <div id="joinmeet">
+          <h4 style="color: black;"> Enter the meeting id below to join meeting</h4>
+          <input type="text" placeholder="Enter the meeting id" name="joinusername" id = "joinusername" required autocomplete="off">
+          <button id="join-meeting-button" style="display: inline-block" onclick="joinMeeting()"> JOIN MEETING</button>
+        </div>
+        <div id="createmeet">
+          <h4 style="color: black;"> Start your own meeting below</h4>
+          <button id="create-meeting-button" style="display: inline-block" onclick="createMeeting()"> START YOUR MEETING</button>
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="section-bg">
+    
+    <div class="container">
+
+
+      <div class="copyright">
+        &copy 2021 Sync, all rights reserved                                       
+      </div>
+      <div class="credits">
+        Orbital 2021</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+
+  <!-- JavaScript Libraries -->
+
+  <script src="jquery.min.js"></script>
+  <script src="jquery-migrate.min.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="easing.min.js"></script>
+  <script src="mobile-nav.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="home.js"></script>
+
+</body>
+</html>

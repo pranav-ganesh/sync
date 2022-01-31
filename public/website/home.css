@@ -1,0 +1,299 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+  background: #fff;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #1bb1dc;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #0a98c0;
+  outline: none;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Arial", ;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+h2 {
+  font-family: "Arial", ;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+  height: 110px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header.header-scrolled,
+#header.header-pages {
+  height: 70px;
+  padding: 15px 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+
+
+#header .logo h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+  color: #413e66;
+  text-decoration: none;
+}
+
+/*# Body*/
+
+#intro {
+  width: 100%;
+  height: 2150px;
+  position: relative;
+  background: #f5f8fd url("background.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+#intro .intro-info h2 {
+  color: #413e66;
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#intro .intro-info h2 span {
+  color: #1bb1dc;
+}
+
+/* Desktop Navigation */
+
+.main-nav,
+.main-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav ul {
+  position: absolute;
+  padding-left: 550px;
+  padding-top: 21px;
+}
+
+.main-nav > ul > li {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+}
+
+.main-nav a {
+  display: block;
+  position: relative;
+  color: #413e66;
+  padding: 10px 15px;
+  transition: 0.3s;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  left: -260px;
+  width: 260px;
+  padding-top: 18px;
+  background: rgba(40, 38, 70, 0.8);
+  transition: 0.4s;
+}
+
+.mobile-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Sections Header
+--------------------------------*/
+
+.section-header h3 {
+  font-size: 36px;
+  color: #413e66;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+  padding: 0 0 30px 0;
+  font-size: 14px;
+  background: #fff;
+}
+
+#about .footer-top .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  color: #535074;
+  font-size: 15px;
+}
+
+#footer .credits {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 4px;
+  color: #8582a8;
+}
+
+.float-container {
+  padding: 20px;
+}
+
+.float-child {
+  position: relative;
+  width: 50%;
+  float: left;
+  padding: 20px;
+  border: 2px
+} 
+
+#create-button{
+  border-radius: 50px;
+  padding: 25px;
+  border: 0;
+  width: 40%;
+  background-color: ORANGE;
+  position: right;
+}
+
+.float-child {
+  position: relative;
+}
+
+.image {
+  display: inline;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 20px;
+  bottom: 0;
+  left: 150px;
+  right: 0;
+  height: 84%;
+  width: 45.5%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #787878;
+  background-image: linear-gradient(white, #616161);
+}
+
+.float-child:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+input {
+  width: 20%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#join-meeting-button{
+  border-radius: 20px;
+  margin-left: 50px;
+  padding: 13px;
+  border: 0;
+  width: 12%;
+  background-color: ORANGE;
+  position: right;
+}
+
+#create-meeting-button {
+  border-radius: 20px;
+  margin-left: 50px;
+  padding: 13px;
+  border: 0;
+  width: 20%;
+  background-color: ORANGE;
+  position: right;
+}
+
+.left-div {
+  width: 350px;
+  height: 20px;
+  margin-left: 120px;
+}
+.right-div {
+  width: 350px;
+  margin-left: 675px;
+}
+
