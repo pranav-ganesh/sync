@@ -26,10 +26,10 @@ let inter2 = 0
 
 
 var peer = new Peer(undefined, {
-    path: '/peerjs', // The path where your self-hosted PeerServer is running 
-    host: '/', // server host 
-    port: '443' // server port
-}) // The Peer object is where we create and receive connections.
+    path: '/peerjs',
+    host: '/',
+    port: '443'
+})
 
 navigator.mediaDevices.getUserMedia({
     video: true,
@@ -43,7 +43,6 @@ navigator.mediaDevices.getUserMedia({
     addVideo(myVideo, stream); 
    
     peer.on('call', call => {
-        // console.log(status)
         const answerCall = true; 
         if (status === "share") {
           $('video').hide()
@@ -98,7 +97,6 @@ navigator.mediaDevices.getUserMedia({
     let chat_msg = $("#chat_message"); 
     $('html').keydown((enter) => {
         if (enter.which == 13 && chat_msg.val().length !== 0) {
-            // console.log(username)
             socket.emit('message', chat_msg.val(), username);
             chat_msg.val('');
         }
@@ -108,7 +106,6 @@ navigator.mediaDevices.getUserMedia({
         if (count == 1) {
           count = 0;
         } else {
-          // var img = document.createElement('img'); 
           $("#chatbox").append(`<li class="message"><b>${username}</b><br/>${message}</li>`);
           count +=1;
         }
@@ -124,7 +121,7 @@ navigator.mediaDevices.getUserMedia({
       }
       scrollNotesToBottom();
     });
-}) // end of navigators.mediaDevices....
+})
 
 const rem_from_participants = (nou) => {
   var els = document.querySelectorAll('h1')
@@ -140,7 +137,6 @@ socket.on('user-disconnected', (userId, nameOfUser) => {
   if (userId == null) {
     console.log("NULL");
   } else {
-    // console.log(nameOfUser)
     rem_from_participants(nameOfUser)
 
     for (let i = 0; i < arrOfParticipants.length; i++) {
@@ -155,8 +151,6 @@ socket.on('user-disconnected', (userId, nameOfUser) => {
     }
     
     if (status == 'share') {
-      // console.log(userId)
-      // console.log(sharePeers)
       if (userId in sharePeers) {
         sharePeers[userId].close()
         $('video').show()
@@ -334,7 +328,6 @@ const chatEnable = () => {
 
 socket.on('hide', data => {
   status = 'share'
-  //$('video').hide()
 })
 
 socket.on("stopShare", (data) => {
@@ -389,7 +382,6 @@ async function screenSharing() {
             video.remove()
             $('video').show()
             socket.emit("removeVid", "video")
-            //socket.emit("show_videos","show videos")
           };
         });
     }
@@ -519,8 +511,6 @@ function ExportToDoc(filename = '') {
   }
   document.body.removeChild(downloadLink);
 }
-
-// Recording section
 
 const startRecording = () => {
   Swal.fire('Your video stream is being recorded!')
@@ -661,9 +651,3 @@ function addStreamStopListener(stream, callback) {
       }, false);
   });
 }
-
-// http://localhost:3030/adc372cb-8cc1-4624-a872-4f70175a76c2
-// https://salty-river-80456.herokuapp.com/
-
-
-
